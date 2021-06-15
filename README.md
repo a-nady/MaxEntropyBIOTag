@@ -6,7 +6,12 @@ To see the model in action, run the feature_set.py with the training and test fi
 
 '''bash
 javac -cp maxent-3.0.0.jar;trove.jar *.java
+'''
+'''bash
 java -cp .:maxent-3.0.0.jar;trove.jar MEtrain training.chunk model.chunk
+'''
+'''bash
 java -cp .:maxent-3.0.0.jar;trove.jar MEtag test.chunk model.chunk response.chunk
 '''
+
 
