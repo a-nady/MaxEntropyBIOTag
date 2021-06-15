@@ -4,14 +4,12 @@ This program trains a model to tag whether something is in the beginning (B), in
 
 To see the model in action, run the feature_set.py with the training and test files as arguments, insert training.feature,test.feature into the MAX_ENT directory, cd into MAX_ENT directory and compile train and test files by running the following commands:
 
-'''bash
+```bashb
 javac -cp maxent-3.0.0.jar;trove.jar *.java
-'''
-'''bash
+
 java -cp .:maxent-3.0.0.jar;trove.jar MEtrain training.chunk model.chunk
-'''
-'''bash
+
 java -cp .:maxent-3.0.0.jar;trove.jar MEtag test.chunk model.chunk response.chunk
-'''
+```
 
 
